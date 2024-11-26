@@ -1,0 +1,56 @@
+pycache/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+Virtual Environment
+venv/
+ENV/
+env/
+.env
+IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.project
+.pydevproject
+.settings
+Streamlit
+.streamlit/
+API Keys and Sensitive Data
+*.env
+config.ini
+secrets.toml
+Operating System
+.DS_Store
+Thumbs.db
+Logs and Databases
+*.log
+*.sqlite
+*.db
+Distribution
+dist/
+build/
+*.spec
+Test Coverage
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
