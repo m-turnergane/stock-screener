@@ -1,236 +1,308 @@
 📈 Advanced Stock Screener
 
-A comprehensive stock screening tool that combines fundamental analysis, technical indicators, and sector-specific metrics to provide detailed investment insights.
+A comprehensive stock screening and analysis platform that delivers in-depth market insights through multi-sector analysis, technical indicators, and automated valuation metrics. The platform combines fundamental analysis, technical indicators, and sector-specific metrics to provide detailed investment recommendations across all major market sectors.
 
-📋 Table of Contents
+✨ Enhanced Features
 
-Features
-Prerequisites
-Installation
-API Setup
-Usage Guide
-Dashboard Overview
-Contributing
-License
-
-✨ Features
-
-Core Capabilities:
-
-📊 Multi-factor valuation analysis
-📉 Technical indicator integration
-🎯 Sector-specific metrics (Technology and Energy sectors)
-🖥️ Interactive dashboard with Streamlit
-⚙️ Customizable screening parameters
-📁 Export functionality for detailed analysis
+Core Analysis Capabilities:
+- 📊 Multi-factor valuation analysis across all market sectors
+- 📈 Comprehensive technical indicator integration
+- 🎯 Sector-specific metrics and risk analysis
+- 📱 Modern, tab-based dashboard interface
+- 🔍 Advanced filtering and comparison tools
+- 📊 Interactive visualizations with Plotly
+- 💾 Enhanced export functionality
 
 Analysis Components:
 
-Fundamental Analysis
-
-- P/E and P/B ratios
-- DCF valuation
-- Financial health metrics
-
-
-Technical Analysis
-
-- RSI indicators
-- Moving averages
-- Volume analysis
-
-
-Sector-Specific Metrics
-
-Technology sector metrics
-Energy sector metrics
-
-
-
-🔧 Prerequisites
-
-Required Software:
-
--Python 3.8 or higher
-- pip (Python package installer)
-
-API Requirements:
-
-- Financial Modeling Prep API key (Free tier available)
-
-🚀 Installation:
-
-1. Clone the Repository
-- git clone https://github.com/m-turnergane/stock-screener.git
-- cd stock-screener
-
-2. Set Up Virtual Environment
-- Create virtual environment
-- python -m venv venv
-
-# Activate virtual environment
-
-# For Windows:
-venv\Scripts\activate
-
-# For macOS/Linux:
-source venv/bin/activate
-
-3. Install Dependencies
-- pip install -r requirements.txt
-
-🔑 API Setup:
-
-Getting Your Free API Key:
-- Visit Financial Modeling Prep: https://site.financialmodelingprep.com/developer/docs/pricing register for a free account and get your API key.
-- Click "Sign Up" for a free account
-
-
-Access Your API Key:
-- Log into your dashboard
-- Navigate to "API Keys" section
-- Copy your API key
-
-
-
-Free Tier Limitations:
-
-⏰ 250 API calls per day
-📊 Limited historical data access
-⚡ Real-time data with 15-minute delay
-📑 Basic financial statements
-
-💻 Usage Guide:
-
-Starting the Application:
-
-Launch the Streamlit app:
-streamlit run stock_screener.py
-
-
-Configuration Steps:
-
-Enter your FMP API key in the sidebar
-
-Select desired sector:
-
-Technology
-Energy
-
-
-Click "Analyze Stocks" button
-
-Best Practices
-
-- Run analysis during market hours for most accurate data
-- Monitor API call usage to stay within limits
-- Export important analyses for offline use
-- Hop into the code base and customize the analysis to your liking, also feel free to add more sectors, symbols, funds, etc.!
-
-📊 Dashboard Overview:
-
-1. Summary Dashboard
-
-Market Overview:
-
-- Sector performance metrics
-- Average valuation scores
-- Market trend indicators
-
-
-Investment Insights:
-
-- Top stock recommendations
-- Risk analysis
-- Sector comparison
-
-
+Fundamental Analysis:
+- Industry-adjusted P/E and P/B ratios
+- DCF valuation modeling
+- Financial health scoring
+- Sector-specific performance metrics
+- Risk-adjusted valuation scores
 
 Technical Analysis:
+- RSI indicators with overbought/oversold signals
+- Moving average crossover detection
+- Volume analysis with trend confirmation
+- Technical score aggregation
+- Interactive technical charts
 
-Price Indicators:
+Sector Analysis:
+- Sector-specific performance metrics
+- Risk factor analysis by sector
+- Industry benchmark comparisons
+- Sector trend visualization
+- Peer comparison tools
 
-- RSI analysis
-- Moving average trends
-- Support and resistance levels
+Dashboard Features:
+- Summary Dashboard with key metrics
+- Technical Analysis visualization
+- Sector-specific analysis
+- Stock Comparison tools
+- Detailed Analysis with filtering
 
+Educational Components:
+- Built-in metric explanations
+- Technical indicator guides
+- Sector-specific insights
+- Risk factor education
 
-Volume Analysis:
+🔄 Current Limitations & Development Opportunities:
 
-- Trading volume patterns
-- Volume-price relationships
-- Unusual volume alerts
+Sector Analysis:
+- Limited sector-specific metric collection for non-Tech/Energy sectors
+- Opportunity to implement detailed metrics for:
+  - Financial Services (banking ratios, credit metrics)
+  - Healthcare (pipeline analysis, regulatory metrics)
+  - Consumer sectors (brand value, market share)
+  - Real Estate (occupancy rates, NOI analysis)
 
+Risk Analysis:
+- Basic risk factor implementation
+- Opportunity to enhance:
+  - Sector-specific risk calculations
+  - Market risk integration
+  - Volatility analysis
+  - Correlation studies
 
+Data Integration:
+- Currently limited to Financial Modeling Prep API
+- Potential to add:
+  - Alternative data sources
+  - Real-time news integration
+  - Social sentiment analysis
+  - Economic indicator correlation
 
-3. Sector Metrics
+Future Enhancement Opportunities:
 
-Technology Sector:
+Technical Analysis:
+- Additional technical indicators (MACD, Bollinger Bands)
+- Pattern recognition algorithms
+- Custom indicator creation
+- Backtesting capabilities
 
-- R&D spending metrics
-- Growth rate analysis
-- Market share evaluation
-- Innovation indicators
+Portfolio Analytics:
+- Portfolio optimization tools
+- Risk-adjusted return calculations
+- Correlation analysis
+- Diversification metrics
 
+Machine Learning Integration:
+- Predictive analytics
+- Pattern recognition
+- Anomaly detection
+- Sentiment analysis
 
-Energy Sector:
+API & Data:
+- Multiple data source integration
+- Real-time websocket support
+- Custom API endpoint creation
+- Enhanced data validation
 
-- Reserve life calculations
-- Production cost analysis
-- ESG score tracking
-- Resource efficiency metrics
+🚀 Installation & Setup
 
+1. Clone the Repository
+```bash
+git clone https://github.com/m-turnergane/stock-screener.git
+cd stock-screener
+```
 
+2. Set Up Virtual Environment
+```bash
+# Create virtual environment
+python -m venv venv
 
-4. Detailed Analysis:
+# Activate virtual environment
+# Windows:
+venv\Scripts\activate
+# macOS/Linux:
+source venv/bin/activate
+```
 
-Comprehensive Metrics:
+3. Install Dependencies
+```bash
+pip install -r requirements.txt
+```
 
-- Fundamental ratios
-- Technical indicators
-- Risk metrics
+4. Create .env File
+```bash
+# Create a .env file in the root directory
+# Add your FMP API key:
+FMP_API_KEY=your_api_key_here
+```
 
+🖥️ Usage Guide
 
-Export Options:
+Starting the Application:
+```bash
+streamlit run stock_screener.py
+```
 
-- CSV export functionality
-- Custom report generation
-- Data visualization export
+Application Workflow:
 
+1. Stock Selection
+   - Enter stock symbols in the sidebar
+   - Add multiple stocks for comparison
+   - View basic company info upon addition
 
+2. Analysis Options
+   - Summary Dashboard: Overall market view
+   - Technical Analysis: Detailed technical indicators
+   - Sector Analysis: Sector-specific metrics
+   - Stock Comparison: Side-by-side analysis
+   - Detailed Analysis: Comprehensive metrics with filtering
 
-🤝 Contributing:
+3. Interactive Features
+   - Filter stocks by various metrics
+   - Compare multiple stocks
+   - Export analysis results
+   - Access educational content
+
+📊 Dashboard Components
+
+1. Summary Dashboard
+   - Market overview metrics
+   - Valuation score distribution
+   - Top stock recommendations
+   - Key insights summary
+
+2. Technical Analysis
+   - RSI visualization with signals
+   - Moving average crossover detection
+   - Volume analysis
+   - Technical signal alerts
+
+3. Sector Analysis
+   - Sector-specific metrics
+   - Risk factor analysis
+   - Industry comparisons
+   - Performance distribution
+
+4. Stock Comparison
+   - Side-by-side metric comparison
+   - Radar chart visualization
+   - Relative performance analysis
+   - Multiple stock selection
+
+5. Detailed Analysis
+   - Comprehensive metrics table
+   - Custom filtering options
+   - Export functionality
+   - Sorting capabilities
+
+🔧 Customization Options
+
+1. Metric Weights
+   - Adjust valuation weights
+   - Modify technical score components
+   - Customize sector-specific weightings
+
+2. Analysis Parameters
+   - RSI thresholds
+   - Moving average periods
+   - Volume significance levels
+   - Risk tolerance settings
+
+3. Visualization Options
+   - Chart types
+   - Color schemes
+   - Data display preferences
+   - Export formats
+
+👥 Contributing
+
+Development Focus Areas:
+
+1. Sector Analysis Enhancement
+   - Implement additional sector metrics
+   - Develop sector-specific risk models
+   - Create custom sector visualizations
+
+2. Technical Analysis Expansion
+   - Add new technical indicators
+   - Implement pattern recognition
+   - Enhance signal detection
+
+3. Data Integration
+   - Additional API integrations
+   - Alternative data sources
+   - Real-time data handling
+
+4. UI/UX Improvements
+   - Mobile responsiveness
+   - Custom themes
+   - Advanced filtering
+   - Interactive tutorials
 
 Contribution Process:
 
-Fork the repository
+1. Fork the repository
+2. Create your feature branch
+3. Commit your changes
+4. Push to the branch
+5. Create a Pull Request
 
-Create your feature branch:
-git checkout -b feature/AmazingFeature
-
-Commit your changes:
-git commit -m 'Add some AmazingFeature'
-
-Push to the branch:
-git push origin feature/AmazingFeature
-
-Open a Pull Request:
-
-Development Guidelines:
-
-- Follow PEP 8 style guide
+Code Standards:
+- Follow PEP 8 guidelines
+- Include docstrings and comments
 - Add unit tests for new features
-- Update documentation as needed
-- Maintain compatibility with free API tier
+- Update documentation
 
-📄 License
-This project is distributed under the MIT License. See LICENSE for more information.
+🔍 Testing
 
-📞 Support
-For issues and feature requests, please use the GitHub Issue Tracker.
+Running Tests:
+```bash
+python -m pytest tests/
+```
 
-🙏 Acknowledgements:
+Test Coverage:
+- Unit tests for core functions
+- Integration tests for API
+- UI component testing
+- Performance benchmarks
 
-Financial Modeling Prep API
-Streamlit Framework
-Contributing Developers
+📚 Documentation
+
+Code Documentation:
+- Function and class documentation
+- API endpoint descriptions
+- Configuration options
+- Custom metric calculations
+
+User Documentation:
+- Installation guide
+- Usage tutorials
+- Metric explanations
+- Troubleshooting guide
+
+🔒 Security & Performance
+
+Security Considerations:
+- API key protection
+- Rate limiting
+- Data validation
+- Error handling
+
+Performance Optimization:
+- API call caching
+- Data preprocessing
+- Batch processing
+- Memory management
+
+📝 License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+🙏 Acknowledgements
+- Financial Modeling Prep API
+- Streamlit Framework
+- Plotly Visualization Library
+- Contributing Developers
+
+💡 Support
+For support, feature requests, or bug reports:
+- Open an issue on GitHub
+- Review existing issues
+- Join discussions
+- Contribute solutions
