@@ -2,6 +2,8 @@
 
 A comprehensive stock screening and analysis platform that delivers in-depth market insights through multi-sector analysis, technical indicators, and automated valuation metrics. The platform combines fundamental analysis, technical indicators, and sector-specific metrics to provide detailed investment recommendations across all major market sectors.
 
+Live Application for public usage via Streamlit Community Deployment site: https://better-stonk-screener.streamlit.app/
+
 ✨ Enhanced Features
 
 Core Analysis Capabilities:
